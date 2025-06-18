@@ -1,0 +1,39 @@
+.food-display {
+  margin-top: 30px;
+}
+
+.food-display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Tablet: 1050px tak */
+@media (max-width: 1050px) {
+  .food-display-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+/* Small Tablet / Large Mobile: 768px tak */
+@media (max-width: 768px) {
+  .food-display-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile: 480px tak */
+@media (max-width: 480px) {
+  .food-display-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

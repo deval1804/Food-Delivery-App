@@ -1,0 +1,94 @@
+.order.add {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.order.add h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.order-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.order-item > div {
+  flex: 1;
+}
+
+.order-item-food {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.order-item-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.order-item-address p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.order-item-phone {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.order-item select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.order-item p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .order-item select {
+    margin-top: 8px;
+  }
+}

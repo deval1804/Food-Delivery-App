@@ -1,0 +1,95 @@
+.place-order {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.place-order-right, .place-order-left {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.place-order-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+.place-order input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.place-order input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-total h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.cart-total-details p, .cart-total-details b {
+  margin: 0;
+}
+
+.cart-total hr {
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.cart-total button {
+  padding: 14px;
+  background: tomato;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.place-order-left {
+  margin-bottom: 40px;
+}
