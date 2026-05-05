@@ -1,13 +1,19 @@
-import express from "express"
-import { loginUser, registerUser } from "../controllers/userController.js"
+import express from "express";
+import {
+  loginUser,
+  registerUser,
+  sendOtp,
+  verifyOtp
+} from "../controllers/userController.js";
 
+const userRouter = express.Router();
 
+// 🔐 Password based
+userRouter.post("/register", registerUser);
+userRouter.post("/login", loginUser);
 
-const userRouter = express.Router()
+// 🔥 OTP based
+userRouter.post("/send-otp", sendOtp);
+userRouter.post("/verify-otp", verifyOtp);
 
-
-userRouter.post("/register", registerUser)
-userRouter.post("/login", loginUser)
-
-
-export default userRouter
+export default userRouter;

@@ -35,28 +35,28 @@ const Navbar = ({ setShowLogin }) => {
           className={menu === "home" ? "active" : ""}
           onClick={() => setMenu("home")}
         >
-          home
+          Home
         </Link>
 
         <a
           onClick={(e) => { e.preventDefault(); handleScroll("explore-menu", "menu") }}
           className={menu === "menu" ? "active" : ""}
         >
-          menu
+          Menu
         </a>
 
         <a
           onClick={(e) => { e.preventDefault(); handleScroll("app-download", "mobile-app") }}
           className={menu === "mobile-app" ? "active" : ""}
         >
-          mobile-app
+          Mobile-App
         </a>
 
         <a
           onClick={(e) => { e.preventDefault(); handleScroll("footer", "contact-us") }}
           className={menu === "contact-us" ? "active" : ""}
         >
-          contact-us
+          Contact Us
         </a>
       </ul>
 
