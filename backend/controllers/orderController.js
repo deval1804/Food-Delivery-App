@@ -129,7 +129,7 @@ const inrToUsdCents = (inrAmount) => {
 // ✅ Place Order Controller
 const placeOrder = async (req, res) => {
   // const frontend_url = "http://localhost:5174";
-  const frontend_url = "https://food-delivery-app-iota-sage.vercel.app/";
+  const frontend_url = "https://food-delivery-app-iota-sage.vercel.app";
 
   try {
     const userId = req.userId;
